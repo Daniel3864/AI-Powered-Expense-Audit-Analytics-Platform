@@ -1,0 +1,11 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Local Ledger Data & Secrets
+master_ledger.csv
+*.env
+.streamlit/secrets.toml

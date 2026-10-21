@@ -1,0 +1,9 @@
+plotly
+sqlalchemy
+mysql-connector-python
+openai
+python-dotenv
+streamlit>=1.30.0
+pandas>=2.0.0
+pypdf>=3.0.0
+pinecone-client>=3.0.0
