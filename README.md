@@ -48,7 +48,7 @@ PINECONE_INDEX_NAME = "expense-audit"
 
 ### 6. Run the Application
 Bash
-streamlit run app.py
+#### streamlit run app.py
 Open your browser and navigate to http://localhost:8501.
 
 ## 🛡️ Data Governance & Compliance
