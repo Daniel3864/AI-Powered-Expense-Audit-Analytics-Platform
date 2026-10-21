@@ -18,39 +18,40 @@ A dynamic financial intelligence dashboard built with Streamlit. This platform p
   * **Level 3 (Global Reset):** Wipes transaction history clean across both local storage and vector DB while preserving segment categories.
 * **⚡ Dual-Layer Sync & Safeguards:** Maintains 100% data consistency across local CSV ledgers (`master_ledger.csv`) and remote Pinecone vector memory, complete with confirmation safeguards to prevent accidental data loss.
 
-* **🚀 Getting Started**
-1. Prerequisites
+  # 🚀 Getting Started**
+## 1. Prerequisites
 Ensure you have Python 3.9+ installed on your system.
 
-2. Clone the Repository
+## 2. Clone the Repository
 Bash
 git clone [https://github.com/Daniel3864/AI-Powered-Expense-Audit-Analytics-Platform.git](https://github.com/Daniel3864/AI-Powered-Expense-Audit-Analytics-Platform.git)
 cd AI-Powered-Expense-Audit-Analytics-Platform
-3. Set Up a Virtual Environment (Recommended)
+## 3. Set Up a Virtual Environment (Recommended)
 Bash
-# macOS/Linux
+ macOS/Linux
 python3 -m venv venv
 source venv/bin/activate
 
-# Windows
+ Windows
 python -m venv venv
 venv\Scripts\activate
-4. Install Dependencies
+## 4. Install Dependencies
 Bash
 pip install -r requirements.txt
-5. Configure API Secrets
+## 5. Configure API Secrets
 Create a .streamlit/secrets.toml file in the root directory to store your credentials securely:
 
 Ini, TOML
 PINECONE_API_KEY = "your-pinecone-api-key"
 PINECONE_ENVIRONMENT = "your-pinecone-environment"
 PINECONE_INDEX_NAME = "expense-audit"
-6. Run the Application
+
+## 6. Run the Application
 Bash
 streamlit run app.py
 Open your browser and navigate to http://localhost:8501.
 
-🛡️ Data Governance & Compliance
+## 🛡️ Data Governance & Compliance
 The platform follows strict Dual-Layer Synchronization principles:
 
 Local State & Storage Layer: Transactions are recorded and stored in Pandas DataFrames and exported to master_ledger.csv.
@@ -59,14 +60,14 @@ Vector Memory Layer: Textual representations of transactions are embedded and st
 
 Executing any Level 1, Level 2, or Level 3 delete action automatically synchronizes both layers, ensuring the AI Assistant never cites purged data.
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 Frontend & Dashboard: Streamlit
 
-Data Processing: Pandas, NumPy
+## Data Processing: Pandas, NumPy
 
-PDF Parsing: PyPDF
+## PDF Parsing: PyPDF
 
-Vector Database: Pinecone
+## Vector Database: Pinecone
 
 
 ---
