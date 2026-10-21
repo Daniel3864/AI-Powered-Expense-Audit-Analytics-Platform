@@ -18,26 +18,7 @@ A dynamic financial intelligence dashboard built with Streamlit. This platform p
   * **Level 3 (Global Reset):** Wipes transaction history clean across both local storage and vector DB while preserving segment categories.
 * **⚡ Dual-Layer Sync & Safeguards:** Maintains 100% data consistency across local CSV ledgers (`master_ledger.csv`) and remote Pinecone vector memory, complete with confirmation safeguards to prevent accidental data loss.
 
----
-
-## 📁 Project Architecture
-
-```text
-.
-├── app.py                      # Main application entry point / Overview dashboard
-├── pages/
-│   ├── 1_Segment_Analytics.py   # In-depth segment-wise expenditure analysis
-│   ├── 2_Data_Ingestion.py      # Manual, SMS, PDF input & Data Governance Suite
-│   └── 4_Assistant.py           # AI Chatbot Assistant & vector query interface
-├── utils/
-│   ├── state_manager.py         # App state management & master ledger persistence
-│   ├── categorizer.py           # Smart category classification logic
-│   └── vector_helper.py         # Pinecone vector embeddings & sync pipeline
-├── master_ledger.csv            # Local transaction database (ignored by git)
-├── requirements.txt             # Project Python dependencies
-└── README.md                    # Project documentation
-
-**🚀 Getting Started**
+* **🚀 Getting Started**
 1. Prerequisites
 Ensure you have Python 3.9+ installed on your system.
 
@@ -86,5 +67,26 @@ Data Processing: Pandas, NumPy
 PDF Parsing: PyPDF
 
 Vector Database: Pinecone
+
+
+---
+
+## 📁 Project Architecture
+
+```text
+.
+├── app.py                      # Main application entry point / Overview dashboard
+├── pages/
+│   ├── 1_Segment_Analytics.py   # In-depth segment-wise expenditure analysis
+│   ├── 2_Data_Ingestion.py      # Manual, SMS, PDF input & Data Governance Suite
+│   └── 4_Assistant.py           # AI Chatbot Assistant & vector query interface
+├── utils/
+│   ├── state_manager.py         # App state management & master ledger persistence
+│   ├── categorizer.py           # Smart category classification logic
+│   └── vector_helper.py         # Pinecone vector embeddings & sync pipeline
+├── master_ledger.csv            # Local transaction database (ignored by git)
+├── requirements.txt             # Project Python dependencies
+└── README.md                    # Project documentation
+
 
 Language: Python 3.9+
